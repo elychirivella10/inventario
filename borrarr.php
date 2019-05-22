@@ -10,9 +10,6 @@
 	
 
 
-
-
-
 		<?php 
 
 include 'conexion.php';
