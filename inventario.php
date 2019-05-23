@@ -45,7 +45,7 @@
 		<tr></tr>
 	    </th>
 
-</table><table>
+
 		<?php
 
 
