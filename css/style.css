@@ -256,7 +256,7 @@ font-size:16px;
 .alert{
     text-align: center;
 	font-size: 0.81rem;
-    color: black;
+    color: red;
     margin-top: -1rem;
     padding-bottom: 1rem;
 } 
@@ -645,7 +645,7 @@ input[name="slider-select-element"] {
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
-    width: 80%;
+    width: 90%;
 }
 
 .element-blue,

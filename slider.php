@@ -20,7 +20,7 @@
                     <div id="slider-box">
                         <div class="slider-element">
                             <article class="element-red">
-
+<!-- Primer Cuadro -->
                                 <table border="1px" width="100%" align="center">
                                     <th align="center">ID</th>
                                     <th align="center">Funcionario</th>
@@ -51,14 +51,14 @@
                         </div>
                         <div class="slider-element">
                             <article class="element-green">
-
+<!-- Segundo Cuadro -->
                                 <table border="1px" width="100%" align="center">
-                                    <th>Dependencia</th>
-                                    <th>Marca PC</th>
-                                    <th>Serial PC</th>
-                                    <th>Mac Adrees</th>
-                                    <th>Marca Monitor</th>
-                                    <th>Serial Monitor</th>
+                                    <th align="center">Dependencia</th>
+                                    <th align="center">Marca PC</th>
+                                    <th align="center">Serial PC</th>
+                                    <th align="center">Mac Adrees</th>
+                                    <th align="center">Marca Monitor</th>
+                                    <th align="center">Serial Monitor</th>
                                
                                     <?php
                                         $sel = $conec ->query(" SELECT * FROM inventarioo ");
@@ -71,6 +71,7 @@
                                             <td><?php echo $fila['mac'] ?></td>
                                             <td><?php echo $fila['marca2'] ?></td>
                                             <td><?php echo $fila['serie2'] ?></td>
+                                            
                                         </tr>
                                     <?php } ?>  
 
@@ -80,12 +81,13 @@
                         </div>
                         <div class="slider-element">
                             <article class="element-blue">
-                                <table border="1px" width="100%" align="center">
-                                    <th>Marca Teclado</th>
-                                    <th>Serial Teclado</th>
-                                    <th>Marca Mouse</th>
-                                    <th>Serial Mouse</th>
-                                    <th>S/Corriente</th>
+<!-- Tercer Cuadro -->
+                                <table border="1px" width="100%" align="center">                                    
+                                    <th align="center">Marca Teclado</th>
+                                    <th align="center">Serial Teclado</th>
+                                    <th align="center">Marca Mouse</th>
+                                    <th align="center">Serial Mouse</th>
+                                    <th align="center">S/Corriente</th>
                                     <th></th>
                                     <th></th>
 
@@ -93,8 +95,8 @@
                                             $sel = $conec ->query(" SELECT * FROM inventarioo ");
                                             while ($fila = $sel -> fetch_assoc()) {
                                             ?>
-                                            <tr align="center">
-                                            <td><?php echo $fila['marca3'] ?></td>
+                                            <tr align="center">                                                
+                                                <td><?php echo $fila['marca3'] ?></td>
                                                 <td><?php echo $fila['serie3'] ?></td>
                                                 <td><?php echo $fila['marca4'] ?></td>
                                                 <td><?php echo $fila['serie4'] ?></td>

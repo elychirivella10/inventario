@@ -16,7 +16,7 @@
             <?php include 'encabezado.php' ?>
         </header>
 
-        <section lass="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">Bienvenido, 
             
 
