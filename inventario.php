@@ -10,6 +10,11 @@
     <body>
 		<?php include 'encabezado.php'	?>
 
+    <form action="buscador.php" method="get" class="form_busc">
+        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+        <input type="submit" value="Buscar" class="btn_busc" >
+
+
         <div id="page">
             <h1><center>Registro de Ordenadores</center></h1><br><br>
         
