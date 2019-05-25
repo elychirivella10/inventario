@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body class="todo">
 		<?php include 'encabezado.php'	?>
 
-    <form action="buscador.php" method="get" class="form_busc">
-        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-        <input type="submit" value="Buscar" class="btn_busc" >
+    <form class="form-buscador" action="buscador.php" method="get" class="form_busc">
+        <input class="balloon buscador" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+        <input class="boton boton-buscador" type="submit" value="Buscar" class="btn_busc" >
+    </form>
 
 
         <div id="page">

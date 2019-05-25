@@ -196,6 +196,12 @@ font-size:16px;
     width: 70%;
 }
 
+.form-buscador{
+    position:relative;
+    top: 2rem;
+    left: 5rem;
+}
+
 
 .icon-account{
     position: absolute;
@@ -228,6 +234,15 @@ font-size:16px;
 	border-radius: 5px;
     padding: 1rem;
     border: none;
+}
+
+.boton-buscador{
+    position: absolute;
+    width: 15%;
+    height: 2.2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 0.4rem;
 }
 
 .submit-registro{
@@ -297,6 +312,14 @@ font-size:16px;
 
 .indent{
     text-indent: 130px;
+}
+
+.buscador{
+    position: relative;
+    width: 50%;
+    height: 2.2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .balloon::-webkit-input-placeholder {
@@ -669,6 +692,7 @@ input[name="slider-select-element"] {
 }
 
 .slider-element {
+    position: relative;
     float: left;
     width: 33.333%;
 }
@@ -690,12 +714,15 @@ input[name="slider-select-element"] {
 #element1:checked ~ #slider-arrows label:nth-child(2):before,
 #element2:checked ~ #slider-arrows label:nth-child(3):before,
 #element3:checked ~ #slider-arrows label:nth-child(1):before {
-    color: #000  ;
-    content: "\f054";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
+    position: absolute;
+    content: "";
+    display: table;
+    top: 5rem;
+    right: 4rem;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/boton-slider.png);
+    background-size: cover;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
 }
@@ -703,12 +730,16 @@ input[name="slider-select-element"] {
 #element1:checked ~ #slider-arrows label:nth-child(3):before,
 #element2:checked ~ #slider-arrows label:nth-child(1):before,
 #element3:checked ~ #slider-arrows label:nth-child(2):before {
-    color: #000  ;
-    content: "\f053";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
+    position: absolute;
+    content: "";
+    display: table;
+    top: 5rem;
+    right: 7rem;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/boton-slider.png);
+    background-size: cover;
+    transform: rotate(180deg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
 }
