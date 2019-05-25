@@ -196,10 +196,17 @@ font-size:16px;
     width: 70%;
 }
 
-.form-buscador{
+.form-busqueda{
     position:relative;
+    width: 80%;
     top: 2rem;
-    left: 5rem;
+    left:3rem;
+}
+
+.filita{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -238,7 +245,7 @@ font-size:16px;
 
 .boton-buscador{
     position: absolute;
-    width: 15%;
+    width: 20%;
     height: 2.2rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -316,7 +323,7 @@ font-size:16px;
 
 .buscador{
     position: relative;
-    width: 50%;
+    width: 70%;
     height: 2.2rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -655,7 +662,7 @@ input[name="slider-select-element"] {
 
 #slider-arrows {
     margin: -10% auto 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 #slider-box {

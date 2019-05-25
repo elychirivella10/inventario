@@ -10,11 +10,10 @@
     <body class="todo">
 		<?php include 'encabezado.php'	?>
 
-    <form class="form-buscador" action="buscador.php" method="get" class="form_busc">
+    <form action="" class="form-busqueda">
         <input class="balloon buscador" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-        <input class="boton boton-buscador" type="submit" value="Buscar" class="btn_busc" >
+        <input class="boton boton-buscador" type="submit" value="Buscar">
     </form>
-
 
         <div id="page">
             <h1><center>Registro de Ordenadores</center></h1><br><br>
@@ -66,19 +65,17 @@
                                     <th align="center">Serial PC</th>
                                     <th align="center">Mac Adrees</th>
                                     <th align="center">Marca Monitor</th>
-                                    <th align="center">Serial Monitor</th>
                                
                                     <?php
                                         $sel = $conec ->query(" SELECT * FROM inventarioo ");
                                         while ($fila = $sel -> fetch_assoc()) {
                                         ?>
                                         <tr align="center">
-                                            <td><?php echo $fila['dependencia'] ?></td>
+                                            <td class="filita"><?php echo $fila['dependencia'] ?></td>
                                             <td><?php echo $fila['marca1'] ?></td>
                                             <td><?php echo $fila['serie1'] ?></td>
                                             <td><?php echo $fila['mac'] ?></td>
                                             <td><?php echo $fila['marca2'] ?></td>
-                                            <td><?php echo $fila['serie2'] ?></td>
                                             
                                         </tr>
                                     <?php } ?>  
@@ -90,27 +87,29 @@
                         <div class="slider-element">
                             <article class="element-blue">
 <!-- Tercer Cuadro -->
-                                <table border="1px" width="100%" align="center">                                    
+                                <table border="1px" width="100%" align="center">   
+                                    <th align="center">Serial Monitor</th>                                 
                                     <th align="center">Marca Teclado</th>
                                     <th align="center">Serial Teclado</th>
                                     <th align="center">Marca Mouse</th>
                                     <th align="center">Serial Mouse</th>
                                     <th align="center">S/Corriente</th>
-                                    <th></th>
-                                    <th></th>
+                                    <th colspan="2"></th>
+                                    
 
                                     <?php
                                             $sel = $conec ->query(" SELECT * FROM inventarioo ");
                                             while ($fila = $sel -> fetch_assoc()) {
                                             ?>
-                                            <tr align="center">                                                
+                                            <tr align="center">                                                  
+                                                <td><?php echo $fila['serie2'] ?></td>                                              
                                                 <td><?php echo $fila['marca3'] ?></td>
                                                 <td><?php echo $fila['serie3'] ?></td>
                                                 <td><?php echo $fila['marca4'] ?></td>
                                                 <td><?php echo $fila['serie4'] ?></td>
                                                 <td><?php echo $fila['cargador'] ?></td>
-                                                <td><a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a></td>
-                                                <td><a href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
+                                                <td><a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
+                                                <a class="boton boton-buscador" href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
                                             </tr>
                                     <?php } ?>
 

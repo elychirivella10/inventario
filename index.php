@@ -75,11 +75,11 @@ if (!empty($_SESSION['active'])) {
 						<form  class="form col-lg-10 col-md-12 col-sm-12 col-xs-6 col-xf-10" action="" method="post">
 							<div class="row"> 
 								<span>
-									<input class="balloon usuario" id="Usuario" type="text" name="usuario" /><label for="Usuario">Usuario</label>
+									<input class="balloon usuario" id="Usuario" type="text" name="usuario" required/><label for="Usuario">Usuario</label>
 								</span>
 	
 								<span>
-									<input class="balloon contraseña"  id="Contraseña" type="password" name="clave"/><label for="Contraseña">Contraseña</label>
+									<input class="balloon contraseña"  id="Contraseña" type="password" name="clave" required/><label for="Contraseña">Contraseña</label>
 								</span>
 								<p class="alert"><?php echo isset($alert)? $alert : ''; ?></p>
 								<input class="boton" type="submit" value="Ingresar">
