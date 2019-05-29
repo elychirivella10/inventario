@@ -10,7 +10,7 @@
     <body class="todo">
 		<?php include 'encabezado.php'	?>
 
-    <form action="" class="form-busqueda">
+    <form action="buscador.php" method="get"class="form-busqueda">
         <input class="balloon buscador" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
         <input class="boton boton-buscador" type="submit" value="Buscar">
     </form>

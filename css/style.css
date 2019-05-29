@@ -781,3 +781,8 @@ input[name="slider-select-element"] {
 }
 
 /* Fin del Display del INVENTARIO */
+
+/* Resultado del buscador */
+#busc {
+    border-left: 5px ;
+}
