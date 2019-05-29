@@ -1,0 +1,35 @@
+*, 
+*::before, 
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: 'work sans';
+}
+
+
+
+@import "config/config";
+
+.login{
+    background-color: $color-container;
+    border-radius: 10px;
+}
+
+.row{
+    background-color: $color-container;
+}
+
+.form{
+    padding-bottom: 3rem;
+}
+@import "Layout/layout";
+@import "Formularios/form";
+@import "Botones/botones";
+@import "Responsive/responsive";
+
+

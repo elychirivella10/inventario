@@ -1,0 +1,38 @@
+
+.boton{
+	background-color: $color-secundario;
+	color: $color-container;
+	font-weight: 400;
+	border-radius: 5px;
+    border: none;
+
+    &:hover{
+        transition: all 0.1s ease-in-out;
+        background-color: $color-secundario-alt;
+    }
+}
+
+.submit-registro{
+    @extend %botones-alto;
+    border-radius: 0 0 0 5px;
+}
+
+.reset{
+    @extend %botones-alto;
+    border-radius: 0 0 5px 0;
+    background-color: $color-alt;
+    color: $color-container;
+
+    &:hover{
+        background-color: $color-gris;
+    }
+}
+
+.boton-buscador{
+    position: absolute;
+    width: 20%;
+    height: 2.2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 0.4rem;
+}
