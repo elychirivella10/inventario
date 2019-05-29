@@ -37,7 +37,7 @@
                                 <div class="myml-nav__section-heading">
                                     <span class="myml-nav__section-icon">
                                         <label class="myml-nav__toggle" for="myml-menu-toggle">
-                                            <svg viewBox="0 0 512 512">
+                                            <svg class="active" viewBox="0 0 512 512">
                                             <path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
                                                 c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"/>
                                         
@@ -144,7 +144,7 @@
                             <img class="icon-menu rotate" src="img/logout.png" alt="">
 
                         </span>
-                <p class="myml-nav__section-title">Salir</p>
+                <p class="myml-nav__section-title Exit">Salir</p>
                 </a>
 
             </section>
