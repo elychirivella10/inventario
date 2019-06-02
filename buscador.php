@@ -26,9 +26,9 @@
         <input class="boton boton-buscador" type="submit" value="Buscar">
     </form>
 
-        <div id="busc">
-        <h1><center>Registro de Ordenadores</center></h1><br><br>            
-            <section>
+        <div id="slider-container">
+                  
+            <section >
                 <div id="slider-box">                    
                             
 <!-- Cuadro -->

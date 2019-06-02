@@ -20,27 +20,25 @@ include 'conexion.php';
 		$cargador = $_POST['cargador'];
 		$usuario = $_POST['usuario'];
 
-$ac = $conec -> 
-
-query("UPDATE inventarioo SET 
-funcionario='$funcionario',
-cargo='$cargo',
-cedula='$cedula', 
-telefono='$telefono', 
-piso='$piso', 
-dependencia='$dependencia', 
-marca1='$marca1', 
-serie1='$serie1', 
-mac='$mac', 
-marca2='$marca2', 
-serie2='$serie2', 
-marca3='$marca3', 
-serie3='$serie3', 
-marca4='$marca4', 
-serie4='$serie4', 
-cargador='$cargador', 
-usuario='$usuario' 
-WHERE id = '$id'");
+$ac = $conec -> query("UPDATE inventarioo SET 
+				funcionario='$funcionario',
+				cargo='$cargo',
+				cedula='$cedula', 
+				telefono='$telefono', 
+				piso='$piso', 
+				dependencia='$dependencia', 
+				marca1='$marca1', 
+				serie1='$serie1', 
+				mac='$mac', 
+				marca2='$marca2', 
+				serie2='$serie2', 
+				marca3='$marca3', 
+				serie3='$serie3', 
+				marca4='$marca4', 
+				serie4='$serie4', 
+				cargador='$cargador', 
+				usuario='$usuario' 
+				WHERE id = '$id'");
 
 if ($ac) {
 	echo "<script>

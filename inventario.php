@@ -11,13 +11,12 @@
 		<?php include 'encabezado.php'	?>
         <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-        <form action="buscador.php" method="get"class="form-busqueda">
+        <form action="buscador.php" method="get" class="form-busqueda">
                 <input class="balloon buscador" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
                 <input class="boton boton-buscador" type="submit" value="Buscar">
             </form>
 
                 <div id="page">
-                    
                 
                     <section>
                         <input type="radio" name="slider-select-element" id="element1" checked="checked" />
@@ -110,7 +109,7 @@
                                                         <td><?php echo $fila['serie4'] ?></td>
                                                         <td><?php echo $fila['cargador'] ?></td>
                                                         <td><a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
-                                                        <a class="boton boton-buscador" href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
+                                                        <a href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
                                                     </tr>
                                             <?php } ?>
 
