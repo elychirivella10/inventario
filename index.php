@@ -32,7 +32,7 @@ if (!empty($_SESSION['active'])) {
 				$_SESSION['rol']		= $dato['rol'];
 
 				echo 	"<script>
-							location.href='inventario.php';
+							location.href='principal.php';
 						</script>";
 			}else{
 				$alert = "El usuario o la clave son incorrectos";
