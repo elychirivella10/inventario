@@ -1,4 +1,6 @@
-<?php include 'conexion.php'?>
+<?php include 'conexion.php';
+$p="P-";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,7 +44,7 @@
                                                 while ($fila = $sel -> fetch_assoc()) {
                                                 ?>
                                                 <tr align="center">
-                                                    <td><?php echo $fila['id'] ?></td>
+                                                    <td><?php echo $p . $fila['id'] ?></td>
                                                     <td><?php echo $fila['funcionario'] ?></td>
                                                     <td><?php echo $fila['usuario'] ?></td>
                                                     <td><?php echo $fila['cargo'] ?></td>
@@ -108,8 +110,12 @@
                                                         <td><?php echo $fila['marca4'] ?></td>
                                                         <td><?php echo $fila['serie4'] ?></td>
                                                         <td><?php echo $fila['cargador'] ?></td>
-                                                        <td><a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
-                                                        <a href="borrar.php?id=<?php echo $fila['id'] ?>">ELIMINAR</a></td>
+                                                        <td >
+                                                            <a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
+                                                            <a href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a>
+                                                            <a href="reporte.php?id=<?php echo $fila['id'] ?>">Reporte</a>
+
+                                                        </td>
                                                     </tr>
                                             <?php } ?>
 

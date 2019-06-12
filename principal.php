@@ -21,10 +21,11 @@
             <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">Bienvenido, 
             
 
-                <?php $sel = $conec ->query(" SELECT * FROM usuario ");
-                while ($var = $sel -> fetch_assoc()) {
+                <?php
+                $sel = $conec ->query(" SELECT * FROM usuario");
+                if ($var = $sel -> fetch_assoc()) {
                 ;?> 
-                <strong><?php echo $var['nombre'] ?></strong></p><?php } ?>
+                <strong><?php echo $var['rol'] ?></strong></p><?php } ?>
         </section>
         
                     <div class="menu-wrapper">
