@@ -1,0 +1,28 @@
+
+$darken:hsl(0, 0%, 10%);
+$darken-alt: hsl(150, 6%, 14%);
+
+$light:hsl(0, 0%, 96%);
+$light-alt: hsl(0, 0%, 89%);
+$light-transparent:hsla(0, 6%, 94%, 0.979);
+$ligth-active: hsl(0, 0%, 94%);
+
+$gray: hsl(0, 0%, 21%);
+
+$blue: hsl(197, 96%, 43%);
+$blue-alt: hsl(197, 91%, 50%);
+
+
+// UI
+$color-ui: $blue;
+
+// TEXT
+$color-text: $darken;
+
+// FORM
+$form: $ligth;
+$form-active: $ligth-active; 
+
+// BOTON
+$btn: $blue;
+$btn-hover: $blue-alt;

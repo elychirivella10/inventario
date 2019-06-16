@@ -1,0 +1,29 @@
+@mixin responsive ($breakpoint, $breakpoints, $col) {
+    @if ($breakpoint)== 'off' and map-has-key($breakpointss, $breakpoints){
+        @media (max-width:map-get($breakpointss, $breakpoints)) {
+            @for $i from 0 to 13 {
+                .col-#{$col}-#{$i}{
+                    width: $i * 8.333333333333%;
+                } 
+            }
+        }
+        
+    } @else if map-has-key($breakpointss, $breakpoint) and ($breakpoints) == 'off'{
+        @media (min-width:map-get($breakpointss, $breakpoint)) {
+            @for $i from 0 to 13 {
+                .col-#{$col}-#{$i}{
+                    width: $i * 8.333333333333%;
+                } 
+            }
+        }
+
+    } @else if map-has-key($breakpointss, $breakpoint) and map-has-key($breakpointss, $breakpoints){
+        @media (max-width:map-get($breakpointss, $breakpoint)) and (min-width:map-get($breakpointss, $breakpoints)) {
+            @for $i from 0 to 13 {
+                .col-#{$col}-#{$i}{
+                    width: $i * 8.333333333333%;
+                } 
+            }
+        }
+    }
+}
