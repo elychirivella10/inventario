@@ -31,16 +31,37 @@ function Footer()
 }
 }
 
+require 'conexion.php';
 
+$id = $_REQUEST['id'];
+
+$val = $conec ->query(" SELECT * FROM inventarioo WHERE id='$id'");
 
 $pdf = new PDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,'¡Hola, Mundo!');
-$pdf->Output();
+$pdf->Cell(40,10,'sahgcuysavcvs');
+
+while($row = $val -> fetch_assoc()){
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 2 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['funcionario'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+    $pdf -> Cell(90 , 10 , $row['id'], 1 , 0 , 'C' , 0);
+}
+   
+$pdf -> Output();
 
 
-    
+
     
 
 ?>
