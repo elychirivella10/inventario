@@ -33,11 +33,14 @@
 		$cargador = $_POST['cargador'];
 		$usuario = $_POST['usuario'];
 
-	$inc = $conec -> query("INSERT INTO inventarioo (id,funcionario,cargo,cedula,telefono,piso,dependencia,marca1,serie1,mac,marca2,serie2,marca3,serie3,marca4,serie4,cargador,usuario) VALUES ('','$funcionario','$cargo','$cedula','$telefono','$piso','$dependencia','$marca1','$serie1','$mac','$marca2','$serie2','$marca3','$serie3','$marca4','$serie4','$cargador','$usuario')");
+	$inc = $conec -> query("INSERT INTO inventarioo 
+										(id,funcionario,cargo,cedula,telefono,piso,dependencia,marca1,serie1,mac,marca2,serie2,marca3,serie3,marca4,serie4,cargador,usuario)
+							VALUES ('','$funcionario','$cargo','$cedula','$telefono','$piso','$dependencia','$marca1','$serie1','$mac','$marca2','$serie2','$marca3','$serie3','$marca4','$serie4','$cargador','$usuario')");
 
 
 	// Aqui esta lo que me da error, el comprueba si existe algo en la variable inc, pero me devuelve false, y por ende la condicional manda el echo "error"
-		if ($inc) {
+	//Verga manin, a mi si me corre, y hace el registro
+	if ($inc) {
 			echo "Se ha completado el registro";
 			echo 
 			"<script>
