@@ -114,8 +114,7 @@ $p="P-";
                                                             <a href="actualizacion.php?id=<?php echo $fila['id'] ?>">Editar</a>
                                                             <a href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a>
                                                             <a href="reporte.php?id=<?php echo $fila['id'] ?>">Reporte</a>
-
-                                                        </td>
+                                                                                                                   </td>
                                                     </tr>
                                             <?php } ?>
 
