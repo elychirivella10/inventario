@@ -20,52 +20,52 @@
 					<input class="balloon indent" id="Funcionario" type="text" name="funcionario" autocomplete="nos" required/><label class="label" for="Funcionario">Nombre</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Cargo" type="text" name="cargo" autocomplete="nos" required/><label class="label" for="Cargo">Cargo</label>
+					<input class="balloon indent" id="Cargo" type="text" name="cargo"  /><label class="label" for="Cargo">Cargo</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Cedula" type="text" name="cedula" autocomplete="nos" required/><label class="label" for="Cedula">Cedula</label>
+					<input class="balloon indent" id="Cedula" type="text" name="cedula"  /><label class="label" for="Cedula">Cedula</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Telefono" type="text" name="telefono" autocomplete="nos" required/><label class="label" for="Telefono">Telefono</label>
+					<input class="balloon indent" id="Telefono" type="text" name="telefono"  /><label class="label" for="Telefono">Telefono</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Piso" type="text" name="piso" autocomplete="nos" required/><label class="label" for="Piso">Piso</label>
+					<input class="balloon indent" id="Piso" type="text" name="piso" /><label class="label" for="Piso">Piso</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Dependencia" type="text" name="dependencia" autocomplete="nos" required/><label class="label" for="Dependencia">Dependencia</label>
+					<input class="balloon indent" id="Dependencia" type="text" name="dependencia" /><label class="label" for="Dependencia">Dependencia</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Marca1" type="text" name="marca1" autocomplete="nos" required/><label class="label" for="Marca1">Marca de PC</label>
+					<input class="balloon indent" id="Marca1" type="text" name="marca1" /><label class="label" for="Marca1">Marca de PC</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie1" type="text" name="serie1" autocomplete="nos" required/><label class="label" for="Serie1">Serial del PC</label>
+					<input class="balloon indent" id="Serie1" type="text" name="serie1" /><label class="label" for="Serie1">Serial del PC</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Mac" type="text" name="mac" autocomplete="nos" required/><label class="label" for="Mac">MAC</label>
+					<input class="balloon indent" id="Mac" type="text" name="mac" /><label class="label" for="Mac">MAC</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Marca2" type="text" name="marca2" autocomplete="nos" required/><label class="label" for="Marca2">Marca del Monitor</label>
+					<input class="balloon indent" id="Marca2" type="text" name="marca2"  /><label class="label" for="Marca2">Marca del Monitor</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie2" type="text" name="serie2" autocomplete="nos" required/><label class="label" for="Serie2">Serial del Monitor</label>
+					<input class="balloon indent" id="Serie2" type="text" name="serie2"  /><label class="label" for="Serie2">Serial del Monitor</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Marca3" type="text" name="marca3" autocomplete="nos" required/><label class="label" for="Marca3">Marca del Teclado</label>
+					<input class="balloon indent" id="Marca3" type="text" name="marca3"  /><label class="label" for="Marca3">Marca del Teclado</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie3" type="text" name="serie3" autocomplete="nos" required/><label class="label" for="Serie3">Serial del Teclado</label>
+					<input class="balloon indent" id="Serie3" type="text" name="serie3"  /><label class="label" for="Serie3">Serial del Teclado</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Marca4" type="text" name="marca4" autocomplete="nos" required/><label class="label" for="Marca4">Marca del Mouse</label>
+					<input class="balloon indent" id="Marca4" type="text" name="marca4"  /><label class="label" for="Marca4">Marca del Mouse</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Serie4" type="text" name="serie4" autocomplete="nos" required/><label class="label" for="Serie4">Serial del Mouse</label>
+					<input class="balloon indent" id="Serie4" type="text" name="serie4"  /><label class="label" for="Serie4">Serial del Mouse</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Cargador" type="text" name="cargador" autocomplete="nos" required/><label class="label" for="Cargador">S/Corriente</label>
+					<input class="balloon indent" id="Cargador" type="text" name="cargador"  /><label class="label" for="Cargador">S/Corriente</label>
 				</span>
 				<span>
-					<input class="balloon indent" id="Usuario" type="text" name="usuario" autocomplete="nos" required/><label class="label" for="Usuario">Nombre de Usuario</label>
+					<input class="balloon indent" id="Usuario" type="text" name="usuario"  /><label class="label" for="Usuario">Nombre de Usuario</label>
 				</span>
 			</div>
 
@@ -205,6 +205,7 @@
                 </div>
             </div>
             </nav>
+            <label class="myml-nav__overlay" for="myml-menu-toggle"></label>
             </div>
 
     </div>

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="merca.css">
     <link rel="shortcut icon" href="img/favicon.png">
     <title>REMA INVENTARIO</title>
 </head>
@@ -153,6 +152,7 @@
                 </div>
             </div>
             </nav>
+            <label class="myml-nav__overlay" for="myml-menu-toggle"></label>
             </div>
 
         

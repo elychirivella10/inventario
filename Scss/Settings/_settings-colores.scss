@@ -7,10 +7,11 @@ $light-alt: hsl(0, 0%, 89%);
 $light-transparent:hsla(0, 6%, 94%, 0.979);
 $ligth-active: hsl(0, 0%, 94%);
 
-$gray: hsl(0, 0%, 21%);
+$gray:hsl(0, 0%, 41%);
+$gray-alt: hsl(0, 0%, 21%);
 
-$blue: hsl(197, 96%, 43%);
-$blue-alt: hsl(197, 91%, 50%);
+$blue: hsl(212, 96%, 43%);
+$blue-alt: hsl(212, 91%, 50%);
 
 
 // UI
@@ -26,3 +27,7 @@ $form-active: $ligth-active;
 // BOTON
 $btn: $blue;
 $btn-hover: $blue-alt;
+
+// LINK
+$link: $gray;
+$link-hover: $blue-alt;

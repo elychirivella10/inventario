@@ -52,45 +52,36 @@ if (!empty($_SESSION['active'])) {
 	
 </head>
 <body>
-
-<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
-        
-		<header class="header-fixed col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
-				<div class="logo ">
-					<p class="logotipo col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">REAM&#8482;</p>
+	<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xf-12">
+		<header class="logo-login-header">
+			<a href="#">
+				<div class="logo-login">
+					<img class="piramides" src="svg/piramide.svg" alt="">
+					<p>REAM&#8482;</p>	
 				</div>
-	
-				<nav class="navegation col-lg-3 col-md-3 col-sm-5 col-xs-12 col-xf-12">
-					<div class="container-nav col-lg-4 col-md-4 col-sm-4 col-xs-2 col-xf-12">
-						<a href="#"><img src="svg/inicio.svg" alt=""></a>
-						<a href="#"><img src="svg/candado.svg" alt=""></a>
-					</div>
-				</nav>
-			</header>
-	
-			<section class="login col-lg-4 col-md-5 col-sm-5 col-xs-6 col-xf-10">
-				<img  class="icon-account" src="img/user.png" alt="Login">
-				<h1 class="title">Inicio de Sesion</h1>
-				<div class="container-form col-lg-12 col-md-12 col-sm-12 col-xs-6 col-xf-10">
-						<form  class="form col-lg-10 col-md-12 col-sm-12 col-xs-6 col-xf-10" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
-							<div class="row"> 
-								<span>
-									<input class="balloon usuario" id="Usuario" type="text" name="usuario" required/><label for="Usuario">Usuario</label>
-								</span>
-	
-								<span>
-									<input class="balloon contraseña"  id="Contraseña" type="password" name="clave" required/><label for="Contraseña">Contraseña</label>
-								</span>
-								<p class="alert"><?php echo isset($alert)? $alert : ''; ?></p>
-								<input class="boton" type="submit" value="Ingresar">
-							</div>
-							
-						</form>
-					</div> 
-				</div>   
-			</section>
-	
-		</div>
-	
+			</a>
+		</header>
+		<section class="login col-lg-4 col-md-5 col-sm-5 col-xs-6 col-xf-10">
+			<img  class="icon-account" src="img/user.png" alt="Login">
+			<h1 class="title">Inicio de Sesion</h1>
+			<div class="container-form col-lg-12 col-md-12 col-sm-12 col-xs-6 col-xf-10">
+					<form  class="form col-lg-10 col-md-12 col-sm-12 col-xs-6 col-xf-10" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+						<div class="row"> 
+							<span>
+								<input class="balloon usuario" id="Usuario" type="text" name="usuario" required/><label for="Usuario">Usuario</label>
+							</span>
+
+							<span>
+								<input class="balloon contraseña"  id="Contraseña" type="password" name="clave" required/><label for="Contraseña">Contraseña</label>
+							</span>
+							<p class="alert"><?php echo isset($alert)? $alert : ''; ?></p>
+							<input class="boton" type="submit" value="Ingresar">
+						</div>
+						
+					</form>
+				</div> 
+			</div>   
+		</section>
+	</div>
 </body>
 </html>
