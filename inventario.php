@@ -19,7 +19,7 @@ $p="P-";
             </form>
 
                 <div id="page">
-                
+                <!-- chupa -->
                     <section>
                         <input type="radio" name="slider-select-element" id="element1" checked="checked" />
                         <input type="radio" name="slider-select-element" id="element2" />
